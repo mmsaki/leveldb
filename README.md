@@ -32,4 +32,4 @@ npm install level
 
 1. running the same database in node and the browser
 1. when your data isn't very relational
-1. building your own kaap architecture
+1. building your own kappa architecture
