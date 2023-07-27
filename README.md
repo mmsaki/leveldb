@@ -42,3 +42,19 @@ npm install level
 1. `db.del()`
 1. `db.batch()`
 1. `db.createReadStream()`
+
+## atomicity
+
+> this means that if you have a bunch of operations, they should either all succeed or all fail
+
+1. Either all transaction succeed or all transactions fail
+
+## consistency
+
+> this means that data is not in some in between state, e.g. between two valid states, this might give you some guarantees about how your data works
+
+1. atomicity is important to enforce consistency
+1. Suppose a user has just signed up. We might need to create:
+   1. a record for their name
+   1. a record for their login username and password
+      > We use `db.batch()` for these operations so that if one operation fails we are guranteed that all other operations will fail so we have consistent data
