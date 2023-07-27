@@ -31,5 +31,6 @@ npm install level
 ## what is leveldb good for?
 
 1. running the same database in node and the browser
+   > everything you do in leveldb you can do in the browser as well
 1. when your data isn't very relational
 1. building your own kappa architecture
