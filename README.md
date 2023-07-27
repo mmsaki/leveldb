@@ -27,3 +27,9 @@ npm install level
    var { Level } = require('level');
    var db = new Level('./whatever.db', { valueEncoding: 'json' });
    ```
+
+## what is leveldb good for?
+
+1. running the same database in node and the browser
+1. when your data isn't very relational
+1. building your own kaap architecture
