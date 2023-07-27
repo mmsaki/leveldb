@@ -34,3 +34,11 @@ npm install level
    > everything you do in leveldb you can do in the browser as well
 1. when your data isn't very relational
 1. building your own kappa architecture
+
+## level methods
+
+1. `db.get()`
+1. `db.put()`
+1. `db.del()`
+1. `db.batch()`
+1. `db.createReadStream()`
