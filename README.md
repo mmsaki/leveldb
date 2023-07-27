@@ -16,7 +16,14 @@ npm install level
 ```
 
 1. Set up a new database
+
    ```js
    var { Level } = require('level');
    var db = new Level('./whatever.db');
+   ```
+
+1. Value encoding
+   ```js
+   var { Level } = require('level');
+   var db = new Level('./whatever.db', { valueEncoding: 'json' });
    ```
