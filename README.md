@@ -17,6 +17,6 @@ npm install level
 
 1. Set up a new database
    ```js
-   var level = require('level');
-   var db = level('./whatever.db');
+   var { Level } = require('level');
+   var db = new Level('./whatever.db');
    ```
