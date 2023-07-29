@@ -58,3 +58,14 @@ npm install level
    1. a record for their name
    1. a record for their login username and password
       > We use `db.batch()` for these operations so that if one operation fails we are guranteed that all other operations will fail so we have consistent data
+
+## createReadStream
+
+> `db.createReadStream(opts)` returns a readable objectMode stream
+
+1. `opts.gte` - greater than or equal to
+1. `opts.gt` - greater than
+1. `opts.lte` - less than or equal to
+1. `opts.lt` - less than
+1. `opts.limit` - maximum number of results
+1. `opts.reverse` - higher keys before lower keys
